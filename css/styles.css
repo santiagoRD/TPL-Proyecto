@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+
+/* Div principal ----------------------------------------------------*/
+
+.container-principal {
+    display: flex;
+    margin: 0;
+    height: 100%;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+
+/*Left Section*/
+
+.section-iam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    box-shadow: 4px 0 20px 0px #d8d8d8;
+    background: black;
+    /* border-right: 3px solid lightgray; */
+    /* padding-right: 2%; */
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-aboutme {
+    width: 100px;
+    margin: .5em;
+    border-radius: 50%;
+}
+
+.name {
+    text-align: left;
+    line-height: 2;
+    padding: 0 2em;
+    margin: .5em;
+    color: white;
+}
+
+.name::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: tomato;
+}
+
+.span-name {
+    font-weight: bold;
+}
+
+.nav-principal a {
+    display: flex;
+    color: white;
+    padding-left: 0;
+    padding-bottom: 15px;
+    text-decoration: none;
+    justify-content: center;;
+}
+
+
+/* .nav-principal {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: gray;
+    margin: 0 32%;
+    padding-bottom: 1em;
+} */
+
+[class^="link-"]:hover {
+    color: gray;
+}
+
+
+/*--------------------------------------------------------------*/
+
+
+/*Right section*/
+
+.section-about {
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15%;
+}
+
+.article-aboutme p {
+    color: #5B5A5A;
+}
+
+.article-moreaboutme {
+    display: none;
+}
+
+.article-shouldlisten {
+    display: none;
+}
+
+.article-shouldwatch {
+    display: none;
+}
+
+.article-socialmedia {
+    display: none;
+}
