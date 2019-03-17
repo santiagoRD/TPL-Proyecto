@@ -58,19 +58,20 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .img-aboutme {
     width: 140px;
-    margin: .5em;
+    padding-bottom: 15px;
     border-radius: 50%;
 }
 
 .name {
     text-align: center;
     line-height: 2;
-    padding: 0 2em;
-    margin: .5em;
+    padding: 0 30px;
+    margin: 0;
     color: black;;
 }
 
@@ -124,20 +125,22 @@ a {
 /*--------------------------------------------------------------*/
 
 
-/*Right section*/
+/*Right section----------------------------------------------------*/
 
 .section-about {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 150px;
-    background: rgb(1, 1, 27)
+    padding-left: 100px;
+    background: black;
+    width: 100%;
 }
 
 .main-container{
     position: relative;
 }
 
+/* estilos que nos permiten controlar mostrar/ocultar de los articles */
 .panel{
     position: absolute;
     display: none;
@@ -147,9 +150,23 @@ a {
     position: inherit;
     display: flex;
     flex-direction: column;
+    animation-name: entrada;
+    animation-duration: 2s;
 }
 
-.container-shouldlisten{
+@keyframes entrada {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+/* ----------------------------------------------------------------------- */
+
+/* estilos de cada uno de los articles------------------------------------ */
+
+
+.container-shouldlisten{                /* container should listen  */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -157,7 +174,7 @@ a {
     padding-right: 70px;
 }
 
-.container-shouldwatch{
+.container-shouldwatch{                  /* container should watch  */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -165,17 +182,29 @@ a {
     padding-right: 70px;
 }
 
-.container-socialmedia{
+.container-socialmedia{                 /* container social media  */
     display: flex;
     justify-content: space-around;
     width: 1000px;
     padding-right: 70px;
 }
 
-.img-sections{
-    border: 3px solid gray;
+.img-sections{                          /* estilos para las imagenes container should listen */
+    border: 3px solid gray;           /* y container should watch*/
 }
 
-.link-socialmedia{
+.figure-img{
+    padding-bottom: 15px;
+    padding-right: 25;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.figure-img:hover,                      /*Transiciones y transformaciones a las imagenes e iconos*/
+.link-socialmedia:hover{
+    transform: scale(1.15);
+    transition-duration: .9s;
+}
+.link-socialmedia{                      /*estilos iconos del container social media*/
     width: 50px;
 }
