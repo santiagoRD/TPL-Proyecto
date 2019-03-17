@@ -50,7 +50,7 @@ p{
     flex-direction: column;
     justify-content: center;
     width: 300px;
-    box-shadow: 4px 0 20px 0px #d8d8d8;
+    box-shadow: -5px 0 10px #333232 inset;
     background: whitesmoke;
 }
 
@@ -203,7 +203,7 @@ a {
 .figure-img:hover,                      /*Transiciones y transformaciones a las imagenes e iconos*/
 .link-socialmedia:hover{
     transform: scale(1.15);
-    transition-duration: .9s;
+    transition-duration: .5s;
 }
 .link-socialmedia{                      /*estilos iconos del container social media*/
     width: 50px;
