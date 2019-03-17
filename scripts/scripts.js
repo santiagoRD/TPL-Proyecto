@@ -20,3 +20,17 @@
 // 		return false;
 // 	});
 // });
+
+(function(d){
+    let links = Array.from(d.querySelectorAll('.link-item'));
+    let articles = Array.from(d.querySelectorAll('.panel'));
+    d.querySelector('#menu-links').addEventListener('click', e => {
+        if(e.target.classList.contains('link-item')){
+            let i = links.indexOf(e.target);
+            links.map(link => link.classList.remove('active'));
+            links[i].classList.add('active');
+            articles.map(panel => panel.classList.remove('active'));
+            articles[i].classList.add('active');
+        }
+    })
+})(document);

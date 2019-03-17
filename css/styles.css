@@ -24,7 +24,22 @@ h1 {
     height: 100%;
 }
 
+h2{
+    color: whitesmoke;
+    position: relative;
+    font-size:40px;
+    top: -70px;
+}
+h3{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
 
+p{
+    color: whitesmoke;
+}
 /*-------------------------------------------------------------------*/
 
 
@@ -34,11 +49,9 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60%;
+    width: 300px;
     box-shadow: 4px 0 20px 0px #d8d8d8;
-    background: black;
-    /* border-right: 3px solid lightgray; */
-    /* padding-right: 2%; */
+    background: whitesmoke;
 }
 
 .aboutme {
@@ -54,11 +67,11 @@ h1 {
 }
 
 .name {
-    text-align: left;
+    text-align: center;
     line-height: 2;
     padding: 0 2em;
     margin: .5em;
-    color: white;
+    color: black;;
 }
 
 .name::after {
@@ -74,21 +87,26 @@ h1 {
     font-weight: bold;
 }
 
+
+.nav-principal {
+    padding-top: 30px;
+}
+
 .nav-principal a {
     display: flex;
-    color: white;
+    color: black;
     padding-left: 0;
     padding-bottom: 15px;
     text-decoration: none;
     flex-direction: column;
     align-items: center;
 }
-
-
-.nav-principal {
-    padding-top: 30px;
-    width: 100%;
+/* --------Manejo de las clases .active */
+.nav-principal a.active{
+    color: tomato;
 }
+
+
 /* 
 a {
     text-decoration: none;
@@ -99,7 +117,7 @@ a {
 } */
 
 [class^="link-"]:hover {
-    color: gray;
+    color: rgb(73, 72, 72);
 }
 
 
@@ -109,29 +127,55 @@ a {
 /*Right section*/
 
 .section-about {
-    padding-left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 15%;
+    padding-left: 150px;
+    background: rgb(1, 1, 27)
 }
 
-.article-aboutme p {
-    color: #5B5A5A;
+.main-container{
+    position: relative;
 }
 
-.article-moreaboutme {
+.panel{
+    position: absolute;
     display: none;
 }
 
-.article-shouldlisten {
-    display: none;
+.panel.active{
+    position: inherit;
+    display: flex;
+    flex-direction: column;
 }
 
-.article-shouldwatch {
-    display: none;
+.container-shouldlisten{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1000px;
+    padding-right: 70px;
 }
 
-.article-socialmedia {
-    display: none;
+.container-shouldwatch{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1000px;
+    padding-right: 70px;
+}
+
+.container-socialmedia{
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    padding-right: 70px;
+}
+
+.img-sections{
+    border: 3px solid gray;
+}
+
+.link-socialmedia{
+    width: 50px;
 }
