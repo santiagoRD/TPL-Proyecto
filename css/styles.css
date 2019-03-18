@@ -198,13 +198,14 @@ a {
     padding-right: 25;
     padding-left: 10px;
     margin: 0;
+    transition-duration: .5s;
 }
 
 .figure-img:hover,                      /*Transiciones y transformaciones a las imagenes e iconos*/
 .link-socialmedia:hover{
     transform: scale(1.15);
-    transition-duration: .5s;
 }
 .link-socialmedia{                      /*estilos iconos del container social media*/
     width: 50px;
+    transition-duration: .5s;
 }
